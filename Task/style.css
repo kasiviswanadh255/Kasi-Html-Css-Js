@@ -17,18 +17,39 @@ header{
 header nav{
     padding: 10px;
     margin-left: 200px;
-    margin-right: 200px;
+    margin-right: 100px;
+}
+.fa-user{
+    padding: 10px 10px 10px 40px;
+} 
+.fa-magnifying-glass, .fa-bag-shopping{
+    padding: 10px;
+}
+.fa-angle-right{
+    margin-right: 150px;
+    margin-left: 5px;
+}
+.fa-angle-left{
+    margin-left: 150px;
+    margin-right: 5px;
+}
+
+.fa-angle-left,.fa-angle-right{
+    float: right;
+    background-color: #fff;
+    color: #000;
+    font-size: 40px;
+}
+.fa-angle-left:hover,.fa-angle-right:hover{
+    background-color: rgb(253, 215, 0);
+    color: #fff;
 }
 #logo{
     float: left;
     width: 20%;
-    /* padding: 10px; */
+    padding: 10px;
 }
-#lang{
-    float: right;
-    padding-top: 17.8px;
-    padding-bottom: 17.8px;
-}
+
 #contents{
     float: right;
     margin-right: 50px ;
@@ -41,9 +62,13 @@ header nav{
     padding-left: 10px;
     padding-right: 10px;
 }
-article{
+li:hover{
+    color: rgb(253, 215, 0);
+}
+.article{
     text-align: center;
-    margin: 200px 400px 0px 400px;
+    margin: 100px 400px 0px 400px;
+    height: 400px;
 }
 h1{
     font-size: 50px;
@@ -52,27 +77,27 @@ h1{
 h4{
     margin-bottom: 20px;
 }
-#btn1{
-    margin-left: 75px;
-    padding-left: 100px ;
-}
-#btn2{
-    margin-right: 75px;
-    padding-right: 100px;
-}
-#btn1 button{
+.btn1,.btn2{
     float: left;
+    margin: 10px;
     background: none;
     border: 3px solid #fff;
-    padding: 10px 40px;
     color: #fff;
+    width: 39%;
+    height: 50px;
 }
-#btn2 button{
+.btn1{
+    margin-left: 68.113px;
+}
+.btn2{
+    margin-right: 68.113px;
+}
+button:hover{
+    background-color: rgb(253, 215, 0);
+    border: none;
+}
+.arrow{
     float: right;
-    background: none;
-    border: 3px solid #fff;
-    padding: 10px 40px;
-    color: #fff;
 }
 .cover{
     margin: 0px 0px;
@@ -99,19 +124,16 @@ h4{
 .card p{
     padding: 20px 20px;
 }
-.card .btn3{
+.btn3{
     padding: 20px 0px 20px 0px;
-}
-.card .btn3 label{
     background-color: #5d6b82;
     border: 2px solid #5d6b82;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
 }
 .info{
     background-color:#f7f9fc ;
-    width: 100vw;
     height: 500px;
 }
 .inform{
@@ -146,9 +168,15 @@ h4{
     margin: 10px 0px;
     width: 100%;
 }
-.inform #rm{
+.rm{
     float: left;
     margin: 10px 0px;
+    padding: 20px 0px 20px 0px;
+    background-color: #5d6b82;
+    border: 2px solid #5d6b82;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
 }
 .clear {
     clear: both;

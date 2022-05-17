@@ -6,43 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carries</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/90b7c80335.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <main class="top">
             <header>
                 <nav>
                     <div id="logo"><img src="logo.webp" alt="LOGO"></div>
-                    <div id="lang">Eng</div>
                     <div class="home">
                         <ul id="contents">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Service</li>
-                            <li>Other Pages</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                            <li>Account</li>
-                            <li>Cart</li>
+                            <li>Home  <i class="fa-solid fa-caret-down"></i></li>
+                            <li>About  <i class="fa-solid fa-caret-down"></i></li>
+                            <li>Service  <i class="fa-solid fa-caret-down"></i></li>
+                            <li>Other Pages  <i class="fa-solid fa-caret-down"></i></li>
+                            <li>Blog  <i class="fa-solid fa-caret-down"></i></li>
+                            <li>Contact  <i class="fa-solid fa-caret-down"></i></li>
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <li>Eng</li>
                         </ul>
                     </div>
                     <div class="clear"></div>
                 </nav>
             </header>
             <!-- <hr size="20px"> -->
-            <article>
+            <div class="article">
                 <h1>WE MAKE THE STRONGEST SERVICE ABOVE THE WORLD</h1>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Eveniet quis incidunt minima, nobis ipsum 
-                    animi optio minus consequuntur temporibus 
-                    obcaecati unde tempore omnis neque culpa id iure 
-                    odit perspiciatis odio.</h4>
-                <div id="btn1">
-                    <button><strong>OUR SERVICE</strong> </button></div>
-                <div id="btn2">
-                    <button><strong>GET A QUOTE</strong></button>
-                </div>
-            </article>
-            
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis incidunt minima, nobis ipsum </h4>
+                <button class="btn1"><strong>OUR SERVICE</strong></button>
+                <button class="btn2"><strong>GET A QUOTE</strong></button>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-left"></i>
+            </div>
         </main>
         <div class="cover">
             <div class="card">
@@ -53,7 +50,7 @@
                 <p>It is a long established fact that a reader will be 
                     distracted by the readable content of a page 
                     when looking at its layout..</p>
-                <div class="btn3"><label>Read More</label></div>
+                <button class="btn3">Read More</button>
             </div>
             <div class="card">
                 <div>
@@ -63,7 +60,7 @@
                 <p>It is a long established fact that a reader will be 
                     distracted by the readable content of a page 
                     when looking at its layout..</p>
-                <div class="btn3"><label>Read More</label></div>
+                <button class="btn3">Read More</button>
             </div>
             <div class="card">
                 <div>
@@ -73,7 +70,7 @@
                 <p>It is a long established fact that a reader will be 
                     distracted by the readable content of a page 
                     when looking at its layout..</p>
-                <div class="btn3"><label>Read More</label></div>
+                <button class="btn3">Read More</button>
             </div>
         </div>
         <div class="info"> 
@@ -90,8 +87,11 @@
                 </div>
                 <div class="Name"><input type="text" placeholder="Destination"></div>
                 <div id="text"><textarea rows="5">Your Message</textarea></div><br>
-                <div id="rm"><label>SEND</label></div>
+                <button class="rm">SEND</button>
             </div>
+            <nav>
+                
+            </nav>
         </div>
     </body>
 </html>
