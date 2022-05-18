@@ -180,6 +180,7 @@ button:hover{
 }
 .about{
     background-color: #fff;
+    margin: auto;
 }
 .fa-suitcase,.fa-thumbs-up,.fa-users{
     color: rgb(253, 215, 0);
@@ -187,6 +188,7 @@ button:hover{
     margin: 20px 40px;
     float: left;
 }
+
 .clear {
     clear: both;
 }
