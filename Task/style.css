@@ -178,6 +178,15 @@ button:hover{
     border-radius: 5px;
     color: #fff;
 }
+.about{
+    background-color: #fff;
+}
+.fa-suitcase,.fa-thumbs-up,.fa-users{
+    color: rgb(253, 215, 0);
+    font-size: 30px;
+    margin: 20px 40px;
+    float: left;
+}
 .clear {
     clear: both;
 }
