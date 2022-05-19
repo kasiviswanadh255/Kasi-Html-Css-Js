@@ -5,21 +5,316 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        table,h2{
+            width: 50%;
+            margin: auto;
+            text-align: right;
+        }
+        table,th,td{
+            border-collapse: collapse;
+            padding: 10px;
+            border-bottom: 2px solid white;
+        }
+        th,h2{
+            text-align: center;
+            background-color: orange;
+        }
+        .caps{
+            background-color: gray;
+            color: white;
+            border-color: gray;
+        }
+        .total{
+            font-weight: bolder;
+            border: 2px black;
+        }
+
+    </style>
 </head>
 <body>
+    <h2>Company Ownership Cap Table</h2>
     <table>
         <thead>
             <tr>
+                <th> </th>
                 <th>
-
+                    Capital($)
+                </th>
+                <th>
+                    Com. Shares
+                </th>
+                <th>
+                    Pref. Shares
+                </th>
+                <th>
+                    Total Shares
+                </th>
+                <th>
+                    % Ownership
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th>
-                    
-                </th>
+                <td>
+                    <strong>Shareholders</strong>
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Founders
+                </td>
+                <td class="caps">
+                    $0
+                </td>
+                <td>
+                    200,000
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    200,000
+                </td>
+                <td>
+                    22.2%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 1
+                </td>
+                <td class="caps">
+                    $100,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    2.2%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 2
+                </td>
+                <td class="caps">
+                    $250,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    50,000
+                </td>
+                <td>
+                    50,000
+                </td>
+                <td>
+                    5.6%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 3
+                </td>
+                <td class="caps">
+                    $100,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    2.2%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 4
+                </td>
+                <td class="caps">
+                    $1,200,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    240,000
+                </td>
+                <td>
+                    240,000
+                </td>
+                <td>
+                    26.7%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 5
+                </td>
+                <td class="caps">
+                    $250,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    50,000
+                </td>
+                <td>
+                    50,000
+                </td>
+                <td>
+                    5.6%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 6
+                </td>
+                <td class="caps">
+                    $100,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    2.2%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 7
+                </td>
+                <td class="caps">
+                    $500,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    100,000
+                </td>
+                <td>
+                    100,000
+                </td>
+                <td>
+                    11.1%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 8
+                </td>
+                <td class="caps">
+                    $400,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    80,000
+                </td>
+                <td>
+                    80,000
+                </td>
+                <td>
+                    8.9%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 9
+                </td>
+                <td class="caps">
+                    $250,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    50,000
+                </td>
+                <td>
+                    50,000
+                </td>
+                <td>
+                    5.6%
+                </td>
+            </tr>
+            <tr class="inves">
+                <td>
+                    Investor 10
+                </td>
+                <td class="caps">
+                    $350,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    70,000
+                </td>
+                <td>
+                    70,000
+                </td>
+                <td>
+                    7.8%
+                </td>
+            </tr>
+            <tr class="total">
+                <td>
+                    Total
+                </td>
+                <td>
+                    $3500,000
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    700,000
+                </td>
+                <td>
+                    900,000
+                </td>
+                <td>
+                    100.0%
+                </td>
             </tr>
         </tbody>
     </table>
