@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    height: 100vh;
+}
+
+header {
+    background-color: #212121;
+    color: white;
+    height: 100vh;
+    width: 15%;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+header h2{
+    padding: 10px;
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
+    margin-bottom: 10px;
+}
+header ul{
+    display: block;
+    list-style: none;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+header li{
+    padding: 10px;
+    background-color: #111111;
+    border: 1px solid #111111;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+header a:hover{
+    color: orangered;
+    text-decoration: underline white;
+}
+header > i{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    transition: 1s;
+    cursor: pointer;
+}
+header > i:hover{
+    background-color: white;
+    color: orangered;
+    border: white;
+    transform: rotate(180deg);
+}
+article {
+    background-color: #111111;
+    width: 85%;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+    background-color: #212121;
+    color: white;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.scroll {
+    position: fixed;
+    top: 118px;
+    left: 1500px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.scroll>i {
+    transition: 1s;
+    cursor: pointer;
+}
+.scroll > i:hover{
+    color: orangered;
+    transform: rotate(720deg);
+}
+.settings{
+    display: none;
+    position: absolute;
+}
+.settings h2,h3{
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.scroll:hover .settings{
+    display: block;
+    background-color: #212121;
+    left: -65px;
+}
+
+/* .bottom{
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    height: 50px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+} */
+
+
