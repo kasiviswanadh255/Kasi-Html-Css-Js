@@ -8,6 +8,9 @@ main {
     display: flex;
     height: 100vh;
 }
+h1 {
+    font-size: 50px;
+}
 
 header {
     background-color: #212121;
@@ -60,7 +63,7 @@ header > i:hover{
     background-color: white;
     color: orangered;
     border: white;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 article {
     background-color: #111111;
@@ -78,10 +81,118 @@ section{
     border-radius: 15px;
     text-align: center;
 }
+.social{
+    float: left;
+    width:43.5%;
+    /* height: 30%; */
+    /* border: 1px solid white; */
+    margin: 50px 25px 50px 50px;
+}
+.profiles{
+    /* border: 1px solid white; */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 5px 5px black;
+    padding: 10px;
+}
+.profiles>i{
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    /* box-shadow: -2px -2px 5px 5px black; */
+    padding: 10px;
+    background-color: #111111;
+    color: #888888;
+    transition: 1s;
+    font-size: 25px;
+}
+.profiles>i:hover{
+    background-color: orangered;
+    color: white;
+}
+.fa-share-nodes,.mail .fa-envelope,.fa-phone{
+    font-size: 25px;
+    padding: 10px;
+    color: orangered;
+    background-color: #111111;
+    border-radius: 50%;
+}
+.maiphn{
+    padding: 10px 0px;
+    height: 220.4px;
+}
+.mail,.phn{
+    float: left;
+    width: 46%;
+    /* border: 1px solid white; */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 5px 5px black;
+    padding: 10px;
+    text-align: center;
+    word-break: break-word;
+    height: 180.4px;
+}
+.info{
+    float: left;
+    width:43.5%;
+    /* height: 30%; */
+    /* border: 1px solid white; */
+    margin: 50px 50px 50px 25px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 5px 5px black;
+    padding: 10px;
+    height: 411.4px;
+}
+.info input{
+    background-color: #212121;
+    /* border: 1px solid black; */
+    /* margin: 10px 20px; */
+    height: 41px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: -0.5px -0.5px 2px 2px black;
+    padding: 10px;
+}
+#Namein{
+    float: left;
+    width: 43.3%;
+    margin: 10px 10px 10px 20px ;
+}
+#Mailin{
+    float: left;
+    width: 43.3%;
+    margin: 10px 20px 10px 10px ;
+}
+#sub{
+    float: left;
+    width: 90%;
+    margin: 10px 20px;
+    
+}
+#mess{
+    background-color: #212121;
+    color: white;
+    width: 90%;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: -0.5px -0.5px 2px 2px black;
+    padding: 10px;
+}
+#send{
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    transition: 1s;
+    border: 1px solid orangered;
+    border-radius: 10px;
+}
+#send:hover{
+    background-color: #212121;
+}
 .scroll {
     position: fixed;
     top: 118px;
-    left: 1500px;
+    left: 1482px;
     background-color: #212121;
     color: white;
     padding: 10px;
@@ -123,5 +234,4 @@ section{
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 } */
-
 
