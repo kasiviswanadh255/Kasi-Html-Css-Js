@@ -5,10 +5,12 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 main {
     display: flex;
     height: 100vh;
 }
+
 h1 {
     font-size: 50px;
 }
@@ -21,42 +23,86 @@ header {
     text-align: center;
     scroll-behavior: smooth;
 }
+
+
 header img{
     height: 298px;
     margin: 20px auto;
     /* width: 227px    ; */
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 85%);
+    animation-name: headimage;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    /* animation-fill-mode: ; */
 }
+@keyframes headimage {
+    from{   
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 header h2{
     padding: 10px;
     border-top: 1px solid orangered;
     border-bottom: 1px solid orangered;
     margin-bottom: 10px;
+    animation-name: head;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes head {
+    from{   
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 header ul{
     display: block;
     list-style: none;
+    animation-name: headlist;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
+@keyframes headlist {
+    from{   
+        transform: translateX(-170px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 header a {
     color: white;
     text-decoration: none;
     transition: 1s;
 }
+
 header li{
     padding: 10px;
     background-color: #111111;
     border: 1px solid #111111;
     margin: auto;
     margin-bottom: 10px;
-    width: 100px;
+    width: 110px;
     text-align: center;
     border-radius: 10px;
 }
+
 header a:hover{
     color: orangered;
     text-decoration: underline white;
 }
+
 header > i{
     color: white;
     padding: 10px;
@@ -66,6 +112,18 @@ header > i{
     background-color: orangered;
     transition: 1s;
     cursor: pointer;
+    animation-name: headicon;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;   
+}
+@keyframes headicon {
+    from{   
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 header > i:hover{
     background-color: white;
@@ -73,6 +131,7 @@ header > i:hover{
     /* border: white; */
     transform: rotate(360deg);
 }
+
 article {
     background-color: #111111;
     width: 85%;
@@ -81,38 +140,68 @@ article {
     padding: 20px;
     scroll-behavior: smooth;
 }
+
 section{
     height: 100vh;
     background-color: #212121;
     color: white;
     margin: 20px;
     border-radius: 15px;
+    /* text-align: center; */
+}
+
+#home,.center{
     text-align: center;
 }
+
 #home img{
     height: 70%;
     width: 75%;
     margin-bottom: 30px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 85%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 85);
+    /* animation-name: headicon;
+    animation-timing-function: cubic-bezier(.23,1.55,.84,-0.45);
+    animation-duration: 0.5s;
+    animation-iteration-count: 1; */
 }
+
 section h1{
     margin: 20px auto;
     padding-top: 20px;
 }
+
 section h4{
     padding: 10px;
     color: #888888;
 }
+
+.flx{
+    display: flex;
+    justify-content: center;
+}
+
 #about .image{
-    float: left;
     overflow: hidden;
     height: 60vh;
     width: 18vw;
-    margin: 20px 0px 40px 40px;
+    margin: 20px 10px 40px 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 85%);
+    animation-name: aboutimg;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    /* animation-delay: 5s; */
+}
+@keyframes aboutimg{
+    from{
+        transform: translateX(-360px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 #about .image img{
     height: 60vh;
@@ -121,17 +210,23 @@ section h4{
     border-radius: 20px;
     transform: scale(1.5);
 }
+
 #about .image img:hover{
     transform: scale(1);
 }
+
 #about .intro{
-    float: left;
-    margin: 40px 10px;
-    width: 35%;
+    margin: 20px 10px;
+    width: 34%;
 }
+
 #about .intro .entity{
     display: flex;
-    text-align: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    /* column-gap: 10px; */
+    /* text-align: left; */
+    row-gap: 100px;
     padding: 10px;
     color: white;
     font-size: 18px;
@@ -142,26 +237,53 @@ section h4{
     word-break: break-word;
     color: orangered;
     transition: 0.5s;
+    cursor: pointer;
 }
+
 #about .intro .entity .ans:hover{
     color: white;
 }
+
 #about .intro .bloc{
     color: #888888;
     padding: 20px;
-
 }
+
+#about .intro .bar {
+    margin: 10px;
+    width: 90%;   
+}
+#about .intro .bar .thing1{
+    padding: 10px;
+    width: 85%;
+}
+#about .intro .bar .thing2{
+    padding: 10px;
+    width: 15%;
+}
+
+#about .intro .bar .box{
+    /* width: 90%; */
+    height: 20px;
+    background-color: orangered;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
 .social{
-    float: left;
     width:43.5%;
     margin: 50px 25px 50px 50px;
 }
+
 .profiles{
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px black;
     padding: 10px;
+    text-align: center;
 }
+
 .profiles>i{
     border-radius: 50%;
     padding: 10px;
@@ -171,10 +293,12 @@ section h4{
     font-size: 25px;
     cursor: pointer;
 }
+
 .profiles>i:hover{
     background-color: orangered;
     color: white;
 }
+
 .fa-share-nodes,.mail .fa-envelope,.fa-phone{
     font-size: 25px;
     padding: 10px;
@@ -182,23 +306,27 @@ section h4{
     background-color: #111111;
     border-radius: 50%;
 }
+
 .maiphn{
     padding: 10px 0px;
-    height: 220.4px;
+    /* height: 220.4px; */
+    display: flex;
+    /* justify-content: right; */
+    /* align-items:stretch; */
 }
+
 .mail,.phn{
-    float: left;
-    width: 46%;
+    /* width: 50%; */
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px black;
     padding: 10px;
     text-align: center;
     word-break: break-word;
-    height: 180.4px;
+    /* height: 180.4px; */
 }
+
 .info{
-    float: left;
     width:43.5%;
     margin: 50px 50px 50px 25px;
     border-radius: 10px;
@@ -206,6 +334,7 @@ section h4{
     padding: 10px;
     height: 411.4px;
 }
+
 .info input{
     background-color: #212121;
     height: 50px;
@@ -214,22 +343,25 @@ section h4{
     box-shadow: -0.5px -0.5px 2px 2px black;
     padding: 10px;
 }
-#Namein{
+
+.info #Namein{
     float: left;
     width: 43.3%;
     margin: 10px 10px 10px 20px ;
 }
-#Mailin{
+
+.info #Mailin{
     float: left;
     width: 43.3%;
     margin: 10px 20px 10px 10px ;
 }
-#sub{
-    float: left;
+
+.info #sub{
     width: 90.552%;
     margin: 10px 20px;
 }
-#mess{
+
+.info #mess{
     background-color: #212121;
     color: white;
     width: 90.552%;
@@ -239,6 +371,7 @@ section h4{
     box-shadow: -0.5px -0.5px 2px 2px black;
     padding: 10px;
 }
+
 #send{
     background-color: orangered;
     color: white;
@@ -248,10 +381,13 @@ section h4{
     border-radius: 10px;
     width: 30%;
     margin: 10px auto;
+    cursor: pointer;
 }
+
 #send:hover{
     background-color: #212121;
 }
+
 .scroll {
     position: fixed;
     top: 118px;
@@ -263,6 +399,7 @@ section h4{
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
+
 .scroll>i {
     cursor: pointer;
     animation-name: scroll;
@@ -271,6 +408,7 @@ section h4{
     animation-timing-function: linear;
     transition: 1s;
 }
+
 @keyframes scroll{
     from{
         transform: rotate(0deg);
@@ -279,13 +417,16 @@ section h4{
         transform: rotate(360deg);
     }
 }
+
 .scroll > i:hover{
     color: orangered;
 }
+
 .settings {
     position: relative;
     left: 0px;
 }
+
 /* .bottom{
     position: fixed;
     top: 100px;
