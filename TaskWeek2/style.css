@@ -3,6 +3,7 @@
     padding: 0px;
     border: 0px solid;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main {
     display: flex;
@@ -19,6 +20,13 @@ header {
     width: 15%;
     text-align: center;
     scroll-behavior: smooth;
+}
+header img{
+    height: 300px;
+    margin: 20px auto;
+    /* width: 227px    ; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 85%);
 }
 header h2{
     padding: 10px;
@@ -81,9 +89,68 @@ section{
     border-radius: 15px;
     text-align: center;
 }
-/* #about h1,#portfolio h1,#contact h1{
-    text-shadow: 0px 50px 5px white;
-} */
+#home img{
+    height: 70%;
+    width: 75%;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 85%);
+}
+section h1{
+    margin: 20px auto;
+    padding-top: 20px;
+}
+section h4{
+    padding: 10px;
+    color: #888888;
+}
+#about .image{
+    float: left;
+    overflow: hidden;
+    height: 60vh;
+    width: 18vw;
+    margin: 20px 0px 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 85%);
+}
+#about .image img{
+    height: 60vh;
+    width: 18vw;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+#about .image img:hover{
+    transform: scale(1);
+}
+#about .intro{
+    float: left;
+    margin: 40px 10px;
+    width: 35%;
+}
+#about .intro .entity{
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#about .intro .entity .ans{
+    padding-left: 10px;
+    word-break: break-word;
+    color: orangered;
+    transition: 0.5s;
+}
+#about .intro .entity .ans:hover{
+    color: white;
+}
+#about .intro .bloc{
+    color: #888888;
+    padding: 20px;
+
+}
 .social{
     float: left;
     width:43.5%;
@@ -188,7 +255,7 @@ section{
 .scroll {
     position: fixed;
     top: 118px;
-    left: 1482px;
+    left: 1483px;
     background-color: #212121;
     color: white;
     padding: 10px;
@@ -197,27 +264,28 @@ section{
     border-bottom-left-radius: 50%;
 }
 .scroll>i {
-    transition: 1s;
     cursor: pointer;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 1s;
+}
+@keyframes scroll{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 .scroll > i:hover{
     color: orangered;
-    transform: rotate(720deg);
 }
-.settings{
-    display: none;
-    position: absolute;
+.settings {
+    position: relative;
+    left: 0px;
 }
-.settings h2,h3{
-    border-bottom: 1px solid white;
-    padding: 10px;
-}
-.scroll:hover .settings{
-    display: block;
-    background-color: #212121;
-    left: -65px;
-}
-
 /* .bottom{
     position: fixed;
     top: 100px;
