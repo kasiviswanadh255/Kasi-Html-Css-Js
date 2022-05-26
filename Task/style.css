@@ -49,7 +49,7 @@ li:hover{
     color: rgb(253, 215, 0);
 }
 main{
-    background: url(/Task/truck-bg1.jpg) no-repeat center;
+    background: url(/Task/truck-bg.jpg) no-repeat center;
     height: 100vh;
     background-size: cover;
     color: #fff;
@@ -59,11 +59,11 @@ main{
     margin: 100px 400px 0px 400px;
     height: 400px;
 }
-h1{
+.article h1{
     font-size: 50px;
     margin-bottom: 20px;
 }
-h4{
+.article h4{
     margin-bottom: 20px;
 }
 .btn1,.btn2{
@@ -124,12 +124,24 @@ button:hover{
     border: 2px solid #f7f9fc;
     border-radius: 20px;
     padding: 10px;
+    transition: 0.5s;
 }
-.card img{
+.card .image{
     width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card .image img{
+    width: 100%;
+}
+.card img:hover{
+    transform: scale(1.1);
 }
 .card h2{
     padding: 20px 0px 10px 0px;
+}
+.card h2:hover{
+    color: rgb(253, 215, 0);
 }
 .card p{
     padding: 20px 20px;
@@ -141,7 +153,7 @@ button:hover{
     padding: 10px 30px;
     border-radius: 5px;
     color: #fff;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 .info{
     background-color:#f7f9fc ;
@@ -200,7 +212,14 @@ button:hover{
     margin: 20px 40px;
     float: left;
 }
+.services{
+    height: 100vh;
+    text-align: center;
 
+}
+.services h1{
+    font-size: 50px;
+}
 .clear {
     clear: both;
 }
