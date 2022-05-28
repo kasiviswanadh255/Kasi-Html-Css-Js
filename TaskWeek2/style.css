@@ -263,14 +263,102 @@ section h4{
 }
 
 #about .intro .bar .box{
-    /* width: 90%; */
     height: 20px;
     background-color: orangered;
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
+#about .intro .bar #box3{
+    width: 70%;
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-delay: 3s; */
+}
+#about .intro .bar #box4{
+    width: 80%;
+    animation-name: box2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-delay: 3s; */
+}
+@keyframes box {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes box1 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes box2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+#portfolio .flx{
+    justify-content:space-around ;
+}
+#portfolio .left , #portfolio .right{
+    width: 45%;
+    height: 70vh;
+    /* background-color: white; */
+    /* border: 2px solid black; */
+    margin: 7.5px auto;
+}
+.left #summ li{
+    display: block;
+    /* list-style: none; */
+    text-indent: 40px;
+    padding: 10px;
+    color: orangered;
+}
+.left #grad{
+    margin: 10px 0px 10px 40px;
+    padding: 10px;
+    /* text-indent: 30px; */
+}
+#grad h3{
+    margin-bottom: 10px;
+    color: orangered;
+}
+#grad label{
+    /* margin: 0px 0px; */
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white; color: #212121;
+}
+#grad h4{
+    margin: 5px 0px -10px -10px;
+}
+.right #grad{
+    margin: 20px auto;
+    padding-left: 40px;
+}
+.right #skills li{
+    display: block;
+    /* list-style: none; */
+    text-indent: 40px;
+    padding: 10px;
+    color: orangered;
+}
 .social{
     width:43.5%;
     margin: 50px 25px 50px 50px;
