@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    top: 0px;
+    bottom: 626px;
+    right: 0px;
+    left: 0px;
+    width: 100vw;
+    background-color: rgba(60, 100, 120, 0.386);
+    /* padding: 10px; */
+    color: #fff;
+}
+header nav{
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+.fa-user{
+    padding: 10px 10px 10px 40px;
+} 
+.fa-magnifying-glass, .fa-bag-shopping{
+    padding: 10px;
+}
+#logo{
+    float: left;
+    width: 10%;
+    padding: 10px;
+}
+#contents{
+    float: right;
+    margin-right:200px;
+    padding: 0px;
+    padding-top: 17.8px;
+    padding-bottom: 17.8px;
+}
+#contents li{
+    /* float: left; */
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+li:hover{
+    color: rgb(253, 215, 0);
+}
+main{
+    background: url(/Task/truck-bg.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+}
+.article{
+    text-align: center;
+    margin: 100px 400px 0px 400px;
+    height: 400px;
+}
+.article h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.article h4{
+    margin-bottom: 20px;
+}
+.btn1,.btn2{
+    float: left;
+    margin: 10px;
+    background: none;
+    border: 3px solid #fff;
+    color: #fff;
+    width: 39%;
+    height: 50px;
+    transition: 0.5s;
+}
+.btn1{
+    margin-left: 68.113px;
+}
+.btn2{
+    margin-right: 68.113px;
+}
+button:hover{
+    background-color: rgb(253, 215, 0);
+    border: none;
+}
+.arrow{
+    float: right;
+    transition: 0.5s;
+}
+.fa-angle-right{
+    margin-right: 150px;
+    margin-left: 5px;
+}
+.fa-angle-left{
+    margin-left: 150px;
+    margin-right: 5px;
+}
+
+.fa-angle-left,.fa-angle-right{
+    float: right;
+    background-color: #fff;
+    color: #000;
+    font-size: 40px;
+}
+.fa-angle-left:hover,.fa-angle-right:hover{
+    background-color: rgb(253, 215, 0);
+    color: #fff;
+}
+.cover{
+    margin: 0px 0px;
+    background-color: #f7f9fc;
+    padding: 0px 150px 0px 150px ;
+    height: 600px;
+}
+.card{
+    float: left;
+    margin: 60px 20px;
+    width: 360px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #f7f9fc;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.card .image{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card .image img{
+    width: 100%;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.card h2{
+    padding: 20px 0px 10px 0px;
+}
+.card h2:hover{
+    color: rgb(253, 215, 0);
+}
+.card p{
+    padding: 20px 20px;
+}
+.btn3{
+    padding: 20px 0px 20px 0px;
+    background-color: #5d6b82;
+    border: 2px solid #5d6b82;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+    /* transition: 0.5s; */
+}
+.info{
+    background-color:#f7f9fc ;
+    height: 600px;
+}
+.inform{
+    float: left;
+    margin: 20px 180px;
+    padding: 10px 20px;
+    width: 30%;
+    /* height: 1000px; */
+    border-radius: 10px;
+    background-color: #eef1f5;
+}
+.inform h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3c4a62;
+}
+.inform input{
+    float: left;
+    height: 40px;
+    margin: 10px auto;
+}
+.Name input{  
+    /* float: left; */
+     width: 100%;
+}
+.inform .mailphn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    /* width: 50%;  */
+}
+.inform #text textarea{
+    float: left;
+    margin: 10px 0px;
+    width: 100%;
+}
+.rm{
+    float: left;
+    margin: 10px 0px;
+    padding: 20px 0px 20px 0px;
+    background-color: #5d6b82;
+    border: 2px solid #5d6b82;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+.about{
+    background-color: #fff;
+    margin: auto;
+}
+.fa-suitcase,.fa-thumbs-up,.fa-users{
+    color: rgb(253, 215, 0);
+    font-size: 30px;
+    margin: 20px 40px;
+    float: left;
+}
+.services{
+    height: 100vh;
+    text-align: center;
+
+}
+.services h1{
+    font-size: 50px;
+}
+.clear {
+    clear: both;
+}
