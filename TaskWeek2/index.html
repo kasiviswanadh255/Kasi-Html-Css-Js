@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <script src="https://kit.fontawesome.com/90b7c80335.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+        main{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+        .imag, .content{
+            margin: auto;
+            width: 50%;
+        }
+        .imag img{
+            width: 100%;
+        }
+        .content{
+            text-align: center;
+        }
+        .content #desk{
+            background-color: #414353;
+            color: #ffffff;
+            border: 2px solid #414353;
+            border-radius: 50px;
+            padding: 15px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+        #desk:hover{
+            background-color: #f4f4f4;
+            color: #414353;
+            /* border:1px solid #414353; */
+        }
+        .content #mobile{
+            display: none;
+        }
+        @media screen and (max-width: 768px){
+            main {
+                display: block;
+            }
+            form #desk{
+                display: none;
+            }
+            .content #mobile{
+                display: block;
+                color: #414353;
+                background-color: #f4f4f4;
+                border: none;
+                left:0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="imag">
+            <img src="/TaskWeek2/plugsockopen.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1 style="font-size: 200px; color: #414353;">404</h1>
+            <h2 style="font-size: 50px; color: #111527;">Page Not Found</h2>
+            <p style="padding: 20px; color: #385bf8; font-size: 30px;">The requested URL was not found on this server.</p>
+            <form action="portfolio.html"><button id="desk"><strong>Go Home</strong></button>
+                <button id="mobile"><i class="fa-solid fa-arrow-left"></i>  <strong>Go back to Home</strong></button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
