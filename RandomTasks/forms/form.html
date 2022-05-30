@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://kit.fontawesome.com/90b7c80335.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            /* display: flex;
+            justify-content: center; */
+            /* margin: 10px auto; */
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background-color: gray;
+            /* padding: 50px auto; */
+            color: white;
+        }
+        header{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+        .content{
+            display: block;
+            /* justify-content: center; */
+            background-color: rgb(0, 0, 0);
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+        .ip_wrap{
+            border: 1px solid white;
+            display: flex;
+            width: 50%;
+            /* justify-content: center; */
+            margin: 20px auto;
+            color: white;
+            align-items: center;
+            align-content: stretch;
+        }
+        .ip_wrap i{
+            background-color: white;
+            color: black;
+            padding: 10px;
+        }
+        .ip_wrap input{
+            background-color: rgba(0, 0, 0, 0.221);
+            padding: 10px;
+            /* margin: 10px; */
+            width: 100%;
+            font-size: 16px;
+            color: white;
+            border: none;
+        }
+        .ip_wrap select{
+            background-color: rgba(0, 0, 0, 0.221);
+            padding: 10px;
+            /* margin: 10px; */
+            width: 100%;
+            font-size: 16px;
+            color: white;
+            border: none;
+        }
+        .ip_wrap input:focus{
+            outline: none;
+        }
+        button{
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            border: 1px solid white;
+            color: white;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>REGISTRATION FORM</h1>
+        </header>
+        <form action="/RandomTasks/forms/index.html">
+            <div class="content">
+                <div class="ip_wrap" style="border: none; border-bottom: 1px solid white; margin-bottom: 30px;">
+                    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error odit quidem impedit sed ratione doloribus distinctio 
+                        necessitatibus nobis, fugit a alias sunt aut dolore ex natus 
+                        unde delectus fuga at.
+                    </h4>
+                </div>
+                <div class="ip_wrap">
+                    <label for="username"><i class="fa-solid fa-user-large"></i></label>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="ip_wrap">
+                    <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="Email" name="mail" placeholder="Email" required>
+                </div>
+                <div class="ip_wrap">
+                    <label for="password"><i class="fa-solid fa-key"></i></label>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <div class="ip_wrap">
+                    <label for="DOB"><i class="fa-solid fa-calendar"></i></label>
+                    <input type="date" name="DOB" required>
+                </div>
+                <div class="ip_wrap" style="border:none;">
+                    <label for="#male">Male</label>
+                    <input type="radio" name="Gender" id="male" value="male">
+                    <label for="#female">Female</label>
+                    <input type="radio" name="Gender" id="female" value="female">
+                    <label for="Others">Others</label>
+                    <input type="radio" name="Gender" id="Others" value="Others">
+                </div>
+                <div class="ip_wrap">
+                    <label for="city"><i class="fa-solid fa-city"></i></label>
+                    <!-- <input type="text" name="city" placeholder="city" required> -->
+                    <select name="city" id="city" style="cursor: pointer;">
+                        <option value="none">-------- Please Choose a City --------</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+                <div class="ip_wrap">
+                    <input type="file" name="file" style="cursor: pointer;" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
