@@ -14,16 +14,50 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         main{
-            /* display: flex;
-            justify-content: center; */
-            /* margin: 10px auto; */
+            display: flex;
+            justify-content: center;
             text-align: center;
             width: 100%;
             height: 100vh;
             margin: auto;
-            background-color: gray;
-            /* padding: 50px auto; */
+            background-color: rgb(0, 0, 0);
             color: white;
+            animation-name: fade;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            overflow: hidden;
+        }
+        /*@keyframes fade {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+        } */
+        .sideImage{
+            width: 60%;
+            animation-name: rightIn;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            
+        }
+        @keyframes rightIn {
+            from{
+                transform: translateX(100vw);
+            }
+            to{
+                transform: translateX(0vw);
+            }
+        }
+        .sideImage img{
+            width: 100%;
+            margin-top: 39px;
+            height: 647px;
         }
         header{
             width: 50%;
@@ -32,17 +66,29 @@
         }
         .content{
             display: block;
-            /* justify-content: center; */
-            background-color: rgb(0, 0, 0);
-            width: 50%;
+            background-color: rgba(0, 0, 0, 0);
+            width: 40%;
             margin: auto;
             padding: 20px;
+            
+            animation-name: leftIn;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        @keyframes leftIn {
+            from{
+                transform: translateX(-100vw);
+            }
+            to{
+                transform: translateX(0vw);
+            }
         }
         .ip_wrap{
             border: 1px solid white;
             display: flex;
             width: 50%;
-            /* justify-content: center; */
             margin: 20px auto;
             color: white;
             align-items: center;
@@ -56,7 +102,6 @@
         .ip_wrap input{
             background-color: rgba(0, 0, 0, 0.221);
             padding: 10px;
-            /* margin: 10px; */
             width: 100%;
             font-size: 16px;
             color: white;
@@ -65,7 +110,6 @@
         .ip_wrap select{
             background-color: rgba(0, 0, 0, 0.221);
             padding: 10px;
-            /* margin: 10px; */
             width: 100%;
             font-size: 16px;
             color: white;
@@ -73,6 +117,9 @@
         }
         .ip_wrap input:focus{
             outline: none;
+        }
+        .ip_wrap select option{
+            background: black;
         }
         button{
             background-color: rgb(0, 0, 0);
@@ -93,17 +140,12 @@
 </head>
 <body>
     <main>
-        <header>
-            <h1>REGISTRATION FORM</h1>
-        </header>
-        <form action="/RandomTasks/forms/index.html">
-            <div class="content">
+        <div class="content">
+            <form action="/RandomTasks/forms/index.html">   
+                <header>
+                    <h1>REGISTRATION FORM</h1>
+                </header>
                 <div class="ip_wrap" style="border: none; border-bottom: 1px solid white; margin-bottom: 30px;">
-                    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Error odit quidem impedit sed ratione doloribus distinctio 
-                        necessitatibus nobis, fugit a alias sunt aut dolore ex natus 
-                        unde delectus fuga at.
-                    </h4>
                 </div>
                 <div class="ip_wrap">
                     <label for="username"><i class="fa-solid fa-user-large"></i></label>
@@ -117,6 +159,7 @@
                     <label for="password"><i class="fa-solid fa-key"></i></label>
                     <input type="password" name="password" placeholder="password" required>
                 </div>
+                
                 <div class="ip_wrap">
                     <label for="DOB"><i class="fa-solid fa-calendar"></i></label>
                     <input type="date" name="DOB" required>
@@ -131,22 +174,28 @@
                 </div>
                 <div class="ip_wrap">
                     <label for="city"><i class="fa-solid fa-city"></i></label>
-                    <!-- <input type="text" name="city" placeholder="city" required> -->
                     <select name="city" id="city" style="cursor: pointer;">
-                        <option value="none">-------- Please Choose a City --------</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Mumbai">Mumbai</option>
-                        <option value="Banglore">Banglore</option>
-                        <option value="Kolkata">Kolkata</option>
-                        <option value="Hyderabad">Hyderabad</option>
-                        <option value="Chennai">Chennai</option>
+                        <option value="none">--- Please Choose a City ---</option>
+                        <option value="Delhi">Wellington</option>
+                        <option value="Mumbai">Auckland</option>
+                        <option value="Banglore">Dunedin</option>
+                        <option value="Kolkata">Hamilton</option>
+                        <option value="Hyderabad">Napier</option>
+                        <option value="Chennai">Queenstown</option>
                     </select>
                 </div>
                 <div class="ip_wrap">
-                    <input type="file" name="file" style="cursor: pointer;" required>
+                    <label for="phone"><i class="fa-solid fa-phone"></i></label>
+                    <input type="text" name="phone" placeholder="Phone number" required>
                 </div>
+                <!-- <div class="ip_wrap">
+                    <input type="file" name="file" style="cursor: pointer;" required>
+                </div> -->
                 <button type="submit">Submit</button>
             </form>
+        </div>
+        <div class="sideImage">
+            <img src="formImage.jpg" alt="">
         </div>
     </main>
 </body>
