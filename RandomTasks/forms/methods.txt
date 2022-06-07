@@ -1,0 +1,108 @@
+json data accessing using javascript
+
+
+number methods:
+user i/p---- prompt();
+    1. str to number
+        1. +str
+        2. parseInt(str)   --------------------- only roundeed off number
+        3. parseFloat(str)
+        4. parseFloat(str).tofixed(decimalplaces) ------ type str
+    
+    2. rounding
+        1. Math.round(number)
+        2. Math.ceiling(num) -------------- converts to its top number
+        3.Math.floor(num) -------------- converts to its bottom number
+    
+    3. Random num
+        1. Math.random(num) ---------- num btw 0&1
+        
+String methods:
+    
+    1. str.length
+    2. str.indexof('', num) ------ num>0 finds the next instance
+    3. str.lastIndexof('')
+    4. str.includes('') ----- type boolean
+    5. str.search('')
+    6. str.trim()-------remove extra spaces around str
+    7. str.toUpperCase()& .toLowerCase()
+    8. str = str.slice(index, index)
+    9. 
+
+
+date Methods:
+    
+    const date = new Date();
+    
+    1. date.getDate()
+    2. date.getMonth() + 1
+    3. date.getFullYear()
+    4. date.getDay()
+    5. date.getHours()
+    6. date.getMinutes()
+    7. date.getSeconds()
+    8. date.getMilliseconds()
+
+Conditions:
+     
+    1. IF :
+        Syntax:
+
+            if (condn1){
+
+            }else if(condn2) {
+
+            }
+            else{
+
+            }
+    2. Switch:
+        Syntax:
+
+            switch(){
+                case 
+
+                    break
+
+                default
+            }
+    3. Ternary:
+        Syntax:
+
+            condn? block : false block; ------- returns also
+
+Loops:
+
+    1. For loop:
+        Syntax:
+
+            for(val;condn;inc/dec){
+                block
+            }    
+    2. While:
+        Syntax:
+
+            while(condn){
+                block
+            }
+    3. ForIn:
+        Syntax:
+
+            for(let j in some){
+                block
+            }
+    4. ForOf:
+        Syntax:
+
+            for( user in users){
+                block
+            }
+    5. ForEach:
+        Syntax:
+
+            Users.forEach((user,i)=>{
+                block
+                return ;
+            });
+String Interpolation:
+    `str ${req} str`
