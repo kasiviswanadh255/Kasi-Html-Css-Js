@@ -276,7 +276,7 @@ for(let i in Products){
       <label for=""  style="border: 1px solid black;">${Products[i].rating.rate}<i class="fa-solid fa-star"></i>      ${Products[i].rating.count}</label>
       <h6>${Products[i].title}</h6>
       <p>${Products[i].category}</p>
-      <p>Rs. ${Products[i].price}</p>
+      <p>Rs. ${Math.ceil(Products[i].price*78.06)}</p>
   </div>
 </div>`;
 }
